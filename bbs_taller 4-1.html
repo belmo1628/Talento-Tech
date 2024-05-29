@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title class="titulo">BBS INGENIERÍA SAS</title>
+	<title>BBS INGENIERÍA SAS</title>
 	<style>
 	body {
 	font-family: Arial, sans-serif;
@@ -50,7 +50,7 @@
 	</style>
 	</head>
 	<body id ="body">
-		<div class="selector-tema">
+		<div class="selector_tema">
 			<select name="" id="tema" onchange="cambiarTema()">
 				<option value="light">Claro</option>
 				<option value="dark">Oscuro</option>
@@ -59,21 +59,20 @@
 		</div>
 	<div class="container">
 	<div class="logo">
-	<img   class="imagen1" src="https://scontent.fnva1-1.fna.fbcdn.net/v/t39.30808-6/438300475_785868016975935_7677834054448856311_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Oj5JkUrF-zAQ7kNvgH28Ulp&_nc_ht=scontent.fnva1-1.fna&oh=00_AYATXs9GuAYnOXzKucSjskwQ1ZTZ_DIt6w5quFRHH2gYLQ&oe=665C5AD1" alt="BBS Logo">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHeRCRAySFS71VXkOIK20nTiXBSq4AmM_PDawxZEod&s" alt="BBS Logo">
 	</div>
 	<p>Empresa dedicada a prestar servicios profesionales de asesoría en Ingeniería Civil</p>
-	<h2 class="titulo">SERVICIOS</h2>
+	<h2>SERVICIOS</h2>
 	<ul class="services">
-	<li>Diseño geométrico de vías</li>
-	<li>Diseño de pavimentos rígidos y flexibles</li>
-	<li>Análisis y Diseños geotécnicos</li>
-	<li>Diseños de Programas de Gerencia</li>
-	<li>Diseño e implementación de Planes de Calidad en vías</li>
-	<li>Análisis y diseños estructurales especiales</li>
-	<li></li>
+	<li>1. Diseño geométrico de vías</li>
+	<li>2. Diseño de pavimentos rígidos y flexibles</li>
+	<li>3. Análisis y Diseños geotécnicos</li>
+	<li>4. Diseños de Programas de Gerencia</li>
+	<li>5. Diseño e implementación de Planes de Calidad en vías</li>
+	<li>6. Análisis y diseños estructurales especiales</li>
 	</ul>
 	<div class="contact">
-	<h3 class="titulo">DATOS DE CONTACTO</h3>
+	<h3>DATOS DE CONTACTO</h3>
 	<p>Teléfono: +57 3163084290</p>
 	<p>Correo Electrónico: bbs.ingenieria.sas@gmail.com</p>
 	</div>
@@ -84,14 +83,14 @@
 	</body>
 	</html>
 	<br>
-	<h1 class="titulo">FORMULARIO DE CONTACTO</h1>
+	<h1>FORMULARIO DE CONTACTO</h1>
 	<!-- Formulario -->
-    <form method="POST" action="">
-	    <!-- Campo de texto -->
+    <form method="POST">
+        <!-- Campo de texto -->
         <label for="">Nombre</label>
-        <input type="text" placeholder="Escriba el nombre" required name="Nombre"> <br> 
-		<label for="">Apellidos</label>
-        <input type="text" placeholder="Escriba los apellidos" required name="Apellidos"> <br> 
+        <input type="text" placeholder="Escriba el nombre" required name="Nombre" id = "Nombre"> <br>
+		<label for="">apellidos</label>
+        <input type="text" placeholder="Escriba los apellidos" required name="Apellidos" id = "Apellidos"> 
 		<br>
 	<!-- Selector -->
 	<label for="">Documento de Identidad</label>
@@ -101,7 +100,7 @@
 			  <option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
 			  <option value="Pasaporte">Pasaporte</option>
 			  <label for="">Documento de identidad</label>
-			  <input type="text" name="text">
+			  <input type="text" name="text" id = "text">
 		</select> <br>
 	<!-- Selector -->
       <label for="">Ciudad</label>
@@ -112,26 +111,26 @@
             <option value="Cali">Cali</option>
       </select> <br>
 	  <label for="">Teléfono</label> 
-	  <input type="tel" placeholder="Escriba el número de Teléfono" required name="tel"> 
+	  <input type="tel" placeholder="Escriba el número de Teléfono" required name="tel" id = "tel"> 
 	  <br>
 	  <label for="">Dirección</label> 
-	  <input type="text" placeholder="Escriba la dirección" required name="dir"> 
+	  <input type="text" placeholder="Escriba la dirección" required name="dir" id = "dir"> 
 	  <br>
 	  <label for="">Correo electrónico</label> 
-	  <input type="email" placeholder="Escriba el correo electrónico" required name="email"> 
+	  <input type="email" placeholder="Escriba el correo electrónico" required name="email" id = "email"> 
 	  <br>
 	  <!--documentos anexos-->
 	  <label for="">Documentos anexos</label>
-        <input type="file" required placeholder="Subir documentos anesos" accept="image/*" name="file"> <br>
+        <input type="file" required placeholder="Subir documentos anesos" accept="image/*" name="file" id = "file"> <br>
 	  <label for="">Fecha de nacimiento</label>
-        <input type="date" required max="2024-05-02" min="1900-01-01" value="2024-05-02" name="fecha_nacimiento">
+        <input type="date" required max="2024-05-02" min="1900-01-01" value="2024-05-02" name="fecha_nacimiento" id = "fecha_nacimiento">
         <br>
 <!-- Button -->
-<button onclick="enviarFormulario()">Enviar</button>
+<button type="button" onclick="enviarFormulario()">Enviar</button>
 <body>
 	<!--TABLA DE PROYECTOS-->
-	<h1 class="titulo">PROYECTOS EN EL AÑO 2023</h1>
-	<table id="estilo-tabla" style="background: aquamarine;">
+	<h1>PROYECTOS EN EL AÑO 2023</h1>
+	<table style="background: aquamarine;">
         <tr style="background-color: brown; color: white;">
             <th>PROYECTO</th>
             <th>FECHA</th>
@@ -211,127 +210,37 @@
 		</tr>
         </th>
     </table>
+
 	<br>
 	<br>
 	<br>
 </body>
-<Style>
-	.imagen1 {
-        width: 30%;
-        border-radius: 100px;
-        border: 1px solid black;
-        padding: 5px;
-        outline-color: #e215b6;
-        outline-style: solid;
-		margin: auto;
-		box-shadow: 5px 1px 25px red;
-    }
-	.titulo {
-		color: tomato;
-        text-shadow: 2px 2px 5px #e215b6;
-        font-family: 'Audiowide', sans-serif;
-        font-style: oblique;
-        font-size: 30px;        
-		text-align: initial;
-		}
-	/* Estilos del Formulario */
-	input, textarea, select {
-        width: 100%;
-        padding: 10px 20px;
-        margin: 8px;
-        display: inline-block;
-        border: 1px solid #04918a;
-        border-radius: 5px;
-        box-sizing: border-box;
-    }
-	/* MedaQueries Para diseño Responsive */
-    @media screen and (max-width: 600px) {
-        button {
-            width: 200px;
-            background-color: #15e237;
-        }
-    }
-
-    @media screen and (min-width: 600px) {
-        button {
-            width: 70%;
-            background-color: #bc24a0;
-			font-family: 'Audiowide', sans-serif;
-            font-style: oblique;
-            font-size: 30px;   
-			color: rgb(40, 241, 134);     
-        }
-    }
-/* Estilos Tabla */
-table#estilo-tabla {
-        border: 1px solid;
-        width: 70%;
-        text-align: center;
-        border-collapse: collapse;
-    }
-
-    th, td {
-        border: 1px solid;
-        padding: 10px;
-        border-color: #2260bd;
-    }
-
-    table#estilo-tabla tr:nth-child(even){
-        background-color: #f2f2f2;
-    }
-
-    table#estilo-tabla tr:hover {
-        background-color: #C5D61D;
-        color: aliceblue;
-    }
-
-    table#estilo-tabla th {
-        background-color: #04918a;
-        color: rgb(167, 240, 140);
-    }
-	ul>li {
-       list-style-type: square; 
-       background-color: white;
-       
-    
-    }
-
-    ul {
-        background-color: #bc24a0;
-        opacity: 0.6;
-        padding: 20px;
-    }
-</Style>
 <script>
     function cambiarTema(){
-        // Elemento que va cambiar
-        var body = document.getElementById("body")
-        // Valor del selector de temas
-        var tema = document.getElementById("tema").value
-        var fondo = ""
-        var letra = ""
+        //elemento que va a cambiar
+        var body = document.getElementById("tema").value
+        var fondo =""
+        var letra =""
         if(tema == "light"){
-            fondo = "white"
+            fondo ="white"
             letra = "black"
-        } else if(tema == "dark"){
-            fondo = "black"
+        }else if(tema == "dark"){
+            fondo ="black"
             letra = "white"
-        } else if(tema == "crazy"){
+        }else if(tema == "crazy"){
             fondo = "tomato"
             letra = "yellow"
         }
-        // Modificamos el estilo de la pagina
         body.style.backgroundColor = fondo
         body.style.color = letra
     }
-
-    function enviarFormulario(){
-        var nombre = document.getElementById("nombre").value
-        var apellidos = document.getElementById("apellidos").value
-        // Agregar los campos que faltan
-
-        if(nombre && apellidos){
-            alert("Los datos del formulario son: " + nombre + " " + apellidos)
-        }
-    }
+	function enviarFormulario(){
+		var nombre = document.getElementById ("nombre").value
+		var apellidos = document.getElementById ("apellidos").value
+		//completar
+		if (nombre&&apellidos) {
+			alert("los datos del formulario son: "+nombre +" "+apellidos)
+		}
+	}
+	//este es un mensaje de prueba
 </script>
