@@ -60,7 +60,13 @@
 	<div class="container">
 	<div class="logo">
 	<img   class="imagen1" src="https://scontent.fnva1-1.fna.fbcdn.net/v/t39.30808-6/438300475_785868016975935_7677834054448856311_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Oj5JkUrF-zAQ7kNvgH28Ulp&_nc_ht=scontent.fnva1-1.fna&oh=00_AYATXs9GuAYnOXzKucSjskwQ1ZTZ_DIt6w5quFRHH2gYLQ&oe=665C5AD1" alt="BBS Logo">
-	</div>
+	<select onchange="cambiarTamañoLogo(value)">
+    <option value="small">Pequeño</option>
+    <option value="medium">Mediano</option>
+    <option value="large">Grande</option>
+    </select>
+    <h1>BBS INGENIERIA SAS</h1>
+    </div>
 	<p>Empresa dedicada a prestar servicios profesionales de asesoría en Ingeniería Civil</p>
 	<h2 class="titulo">SERVICIOS</h2>
 	<ul class="services">
@@ -324,7 +330,6 @@ table#estilo-tabla {
         body.style.backgroundColor = fondo
         body.style.color = letra
     }
-
     function enviarFormulario(){
         var nombre = document.getElementById("nombre").value
         var apellidos = document.getElementById("apellidos").value
@@ -333,5 +338,17 @@ table#estilo-tabla {
         if(nombre && apellidos){
             alert("Los datos del formulario son: " + nombre + " " + apellidos)
         }
+    }
+    function cambiarTamañoLogo(tamano) {
+        var logo = document.getElementById("logo")
+        var tamanoLogo = 0
+       if(tamano == "small"){
+            tamanoLogo = 300
+       }else if(tamano == "medium"){
+            tamanoLogo = 600
+       }else if(tamano == "large"){
+            tamanoLogo = 900
+        }
+        logo.width =tamanoLogo
     }
 </script>
